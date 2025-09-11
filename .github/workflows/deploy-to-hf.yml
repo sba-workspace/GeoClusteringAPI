@@ -1,0 +1,29 @@
+name: Deploy to Hugging Face Spaces
+
+on:
+  push:
+    branches:
+      - main   # or "master", whichever branch you use
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v3
+
+      - name: Set up git
+        run: |
+          git config --global user.email "you@example.com"
+          git config --global user.name "Your Name"
+
+      - name: Push to Hugging Face Space
+        env:
+          HF_TOKEN: ${{ secrets.new }}
+        run: |
+          git clone https://huggingface.co/spaces/sba-btw/GeoClustering-API
+          cd YourSpaceName
+          rsync -av --exclude='.git' ../ . 
+          git add .
+          git commit -m "Sync from GitHub" || echo "No changes"
+          git push
