@@ -105,9 +105,6 @@ def load_model_on_startup():
         print(f"Error initializing model: {e}")
         clusterer = None
         return False
-@app.get("/")          # This registers the root path
-def read_root():
-    return {"message": "GeoClustering API is alive"}
 
 @app.on_event("startup")
 async def startup_event():
