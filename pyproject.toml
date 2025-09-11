@@ -20,12 +20,12 @@ pandas = ">=2.2.2"
 numpy = "1.26"
 scikit-learn = "1.4.2"
 geopy = "2.4.1"
-scipy = "^1.11"
+scipy
 
 # Gradio and UI dependencies
 gradio = "^4.44.0"
-plotly = "^5.17.0"
-folium = "^0.15.0"
+folium = "^0.17.0"
+plotly = "^5.22.0"
 
 # Other
 requests = "2.32.3"
