@@ -22,7 +22,7 @@ jobs:
           HF_TOKEN: ${{ secrets.new }}
         run: |
           git clone https://huggingface.co/spaces/sba-btw/GeoClustering-API
-          cd YourSpaceName
+          cd GeoClustering-API
           rsync -av --exclude='.git' ../ . 
           git add .
           git commit -m "Sync from GitHub" || echo "No changes"
