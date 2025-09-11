@@ -19,7 +19,7 @@ jobs:
 
       - name: Push to Hugging Face Space
         env:
-          HF_TOKEN: ${{ secrets.new }}
+          new: ${{ secrets.new }}
         run: |
           git clone https://huggingface.co/spaces/sba-btw/GeoClustering-API
           cd GeoClustering-API
