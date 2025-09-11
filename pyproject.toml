@@ -20,7 +20,7 @@ pandas = ">=2.2.2"
 numpy = "1.26"
 scikit-learn = "1.4.2"
 geopy = "2.4.1"
-scipy
+scipy = "^1.11.0"
 
 # Gradio and UI dependencies
 gradio = "^4.44.0"

@@ -411,14 +411,14 @@ files = [
 
 [[package]]
 name = "folium"
-version = "0.15.1"
+version = "0.17.0"
 description = "Make beautiful maps with Leaflet.js & Python"
 optional = false
-python-versions = ">=3.7"
+python-versions = ">=3.8"
 groups = ["main"]
 files = [
-    {file = "folium-0.15.1-py2.py3-none-any.whl", hash = "sha256:480f217b80d27530eef22e0535030f1696d61a2d55e6cc17acc36750cca89463"},
-    {file = "folium-0.15.1.tar.gz", hash = "sha256:cb792d11e8049a455d3dc6416cdd8e7a1623d6b949f6e42c45a5d8fa4d1e24f4"},
+    {file = "folium-0.17.0-py2.py3-none-any.whl", hash = "sha256:14210d054e9afad6ebac037495508297d78805fcfa16f859fdee10bb7f85c2c1"},
+    {file = "folium-0.17.0.tar.gz", hash = "sha256:48385df9a3f6ceca23647c2e8d87850c8a6e05b40db63266e7b8c6d2d734d4c6"},
 ]
 
 [package.dependencies]
@@ -2624,4 +2624,4 @@ files = [
 [metadata]
 lock-version = "2.1"
 python-versions = ">=3.11,<3.13"
-content-hash = "cf291b682d5d77189fe60d583ed5782b76c8ae6471239478dcb92a2303ccc34d"
+content-hash = "85c91fbeb59e05d986eb3fe3fd35c3ae5f3854f3a244e9627d46e5f4ae86904b"
