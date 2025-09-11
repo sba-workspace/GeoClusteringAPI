@@ -17,9 +17,12 @@ jobs:
           git config --global user.email "you@example.com"
           git config --global user.name "Your Name"
 
+      - name: Configure Hugging Face authentication
+        run: |
+          git config --global credential.helper store
+          echo "https://sba-btw:${{ secrets.HF_TOKEN }}@huggingface.co" > ~/.git-credentials
+
       - name: Push to Hugging Face Space
-        env:
-          HF_TOKEN: ${{ secrets.HF_TOKEN }}
         run: |
           git clone https://huggingface.co/spaces/sba-btw/GeoClustering-API
           cd GeoClustering-API
