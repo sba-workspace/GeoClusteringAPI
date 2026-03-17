@@ -11,13 +11,5 @@ pinned: false
 
 # GeoClustering API 🚚
 
-A route optimization and clustering model using KMeans + Microsoft Maps API.  
+ML service for grouping geographic coordinates into meaningful clusters using KMeans and DBSCAN
 
-## How to use
-1. Upload a CSV of coordinates  
-2. The model clusters locations and generates optimized routes  
-3. Results are displayed interactively  
-
----
-
-👉 Powered by **Gradio** + **Hugging Face Spaces**
